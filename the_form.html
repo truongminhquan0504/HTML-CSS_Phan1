@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Anh_HTML/favicon.png" type="image/x-icon">
+    <title>Fan cuồng bóng đá</title>
+</head>
+<body>
+    <!-- Tiêu đề -->
+    <h1>Đơn gia nhập hội Fan cuồng đội tuyển bóng đá "Dớt như quả ái"</h1>  
+    <!-- Đoạn văn bản -->
+    <p>Chào mừng các bạn đến với hội của những trái tim rực đỏ, cháy hết mình vì màu cờ sắc áo</p>
+    <!-- Họ và tên -->
+    <label for="name">Họ và tên (Để chúng tôi gọi đi bão nhó):</label> <br>
+    <input type="text" name="name" id="name" placeholder="Vd: Vi Văn A" required><br><br>
+    <!-- Email -->
+    <label for="email">Email (Để nhận link nóng đá nét hơn người yêu bạn):</label> <br>
+    <input type="email" name="email" id="email" placeholder="Vd: tmq@gmail.com" required> <br>
+    <br>
+    <!-- Mô tả cảm xúc  -->
+    <label for="describe">Mô tả cảm xúc khi đội "Dớt như quả ái" thắng đội "Be Cú"</label> <br>
+    <textarea name="dascribe" id="dascribe" placeholder="Cảm xúc thật là..." required rows="5" cols="50" spellcheck></textarea><br>
+    <br>
+    <!-- Giới tính -->
+     <fieldset>
+        <legend>Giới tính của bạn để  sắp xếp chỗ ngồi đi bão</legend>
+        <!-- Nam -->
+        <label for="male">
+            <input type="radio" name="gender" id="male" value="nam">
+            Nam 
+        </label><br>
+        <!-- Nữ -->
+        <label for="female">
+            <input type="radio" name="gender" id="female" value="Nữ">
+            Nữ
+        </label><br>
+        <!-- Bê đê -->
+         <label for="bede">
+            <input type="radio" name="gender" id="bede" value="Bê đê">
+            Bê đê
+        </label> <br>
+     </fieldset> <br>
+     <!-- Thích chơi vị trí trên sân -->
+     <label for="Postions">Bạn thích chơi ở vị trí nào trên sân</label><br>
+     <select name="Postions" id="Postions" >
+        <option value="Thủ môn">Thủ môn</option>
+        <option value="Hậu vệ">Hậu vệ</option>
+        <option value="Trung vệ">Trung vệ</option>
+        <option value="Tiền vệ">Tiền vệ</option>
+        <option value="Tiền đạo">Tiền đạo</option>
+     </select> <br><br>
+     <!-- Mức độ Fan cuồng -->
+      <label for="fan cuồng">Mức độ Fan cuồng của bạn (1 -> 10): </label>
+      <input type="number" name="fan cuồng" id="fan cuồng" min="0" max="10" step="2"> <br> <br>
+      <!-- Cầu thủ yêu thích -->
+       <label for="cầu thủ yêu thích">Cầu thủ yêu thích nhất của mày: </label>
+       <input list="cầu thủ"  name="cầu thủ yêu thích" id="cầu thủ yêu thích"  required>
+        <datalist id="cầu thủ">
+            <option value="Thành Cát Tư Hãn">Thành Cát Tư Hãn</option>
+            <option value="Hàn Tín">Hàn Tín</option>
+            <option value="Ba Que">Ba Que</option>
+            <option value="MadamPang">MadamPang</option>
+        </datalist><br>
+        <br>
+        <!-- Lời cam kết của anh em -->
+        <p><b>Bạn có cam kết không chổng mông lại với đội tuyển không?</b></p>
+        <label for="cam kết">Tôi cam kết</label>
+        <input type="checkbox" name="cam kết" id="cam kết"><br>
+        <br>
+
+        <button type="submit">Gửi đơn đến đội tuyển</button>
+        <button type="reset">Làm lại đơn nào</button>
+</body>
+</html>
