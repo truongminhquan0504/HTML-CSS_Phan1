@@ -1,0 +1,170 @@
+/* Thanh điều hướng NarBar */
+.navbar{
+   min-height: 42px;
+   background-color: orangered;
+   display: flex;
+   justify-content: space-between;
+}
+.navbar--list{
+   padding-left: 0;
+   margin: auto 16px;
+}
+.navbar--item{
+   color: azure;
+   list-style: none; 
+   margin: 0 8px;
+   display: inline-block;
+}
+
+/* Layout Form  */
+.form{
+   max-width: 720px;
+   padding: 10px;
+   margin: 30px auto 0 auto ;
+   background-color: antiquewhite;
+}
+.layout--row{
+   padding: 8px 0;
+   display: flex;
+}
+.layout__row--input{
+   flex: 1;
+}
+.layout__row--label{
+   min-width: 70px;
+}
+
+/* Layout Text */
+.text{
+   margin: 30px;
+   padding: 10px 0 ;
+   background-color: antiquewhite;
+   display: flex;
+}
+.a{
+   flex: 1;
+}
+.text__list2{
+   flex: 3;
+}
+
+/* Promotional  */
+.promotional{
+   margin: 30px;
+   background-color: rgb(218, 208, 208);
+   padding: 10px;
+   display: flex;
+   justify-content: space-around;
+   flex-direction: column;
+}
+/* Khi thu nhỏ lại sẽ thu thành hàng ngang với màn hình của Mobie */
+@media (min-width: 700px) {
+   .promotional{
+      flex-direction: row;
+   }
+}
+.pro{
+   flex-basis: 30%;
+}
+.s1{
+   background-color: antiquewhite;
+}
+.s2{
+   background-color: rgb(151, 151, 226);
+}
+.s3{
+ background-color: rgb(228, 172, 99);
+}
+
+/* Layout Box */
+.layoutbox{
+   background-color: antiquewhite;
+  margin-top: 30px;
+  padding: 12px 0 30px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.box__number{
+  height: 100px;
+  width: 100px;
+  color: brown;
+  font-size: 40px;
+  background-color: blueviolet;
+   text-align: center;
+   line-height: 100px ;
+   margin-top: 30px;
+   font-weight: 700;
+}
+
+/* Center Layout */
+.center{
+   background-color: aquamarine;
+   max-width: 640px;
+   height: 460px;
+   margin: 30px auto 30px auto;
+   padding: 30px 0;
+   display: flex;
+}
+.center--layout{
+   margin: auto;
+   font-weight: 700;
+   font-size: 43px;
+}
+
+/* Chart Layout  */
+.chart__layout{
+   background-color: rgb(141, 211, 211);
+   margin: 30px auto 0 auto;
+   padding: 30px 0;
+   height: 320px;
+   display: flex;
+   justify-content: space-around; /*Căn chỉnh đẻu các dòng*/ 
+   align-items: flex-end; /* Đảo ngược biểu đồ */
+}
+.chart__layout--tiem{
+   width: 60px;
+   background-color: rgb(253, 235, 67);
+   font-weight: 700;
+   text-align: center;
+   height: var(--percent); /*Dùng hàm đựa theo tên biến  */
+   color: rgb(131, 24, 163);
+   animation: growth ease-out 0.5s;
+}
+@keyframes growth{
+   /* Anamition tự động */
+   from{
+      opacity: 0;
+      height: calc(var(--percent) -50%);
+   }
+   to{
+      opacity: 1;
+      height: calc(var(--percent));
+   }
+}
+
+/* Bảng Table */
+.table{
+   background-color: rgb(204, 183, 156);
+   margin: 30px auto 0 auto;
+   display: flex;
+}
+.table__con{
+   background-color: aliceblue;
+   margin: 10px;
+   flex: 1;
+   align-content: center;
+}
+.table--item{
+   flex: 1;
+}
+.ss1{
+   flex: 1;
+   background-color: rgb(31, 98, 199);
+   padding: 14px 16px;
+}
+.ss2{
+   padding: 14px 16px;
+   flex: 1;
+   background-color: chartreuse;
+}
